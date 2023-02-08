@@ -2,23 +2,26 @@ package refactoring_guru.builder.example.builders;
 
 import refactoring_guru.builder.example.cars.Car;
 import refactoring_guru.builder.example.cars.Type;
-import refactoring_guru.builder.example.components.Engine;
-import refactoring_guru.builder.example.components.GPSNavigator;
-import refactoring_guru.builder.example.components.Transmission;
-import refactoring_guru.builder.example.components.TripComputer;
 import refactoring_guru.builder.example.components.*;
 
 /**
  * EN: Concrete builders implement steps defined in the common interface.
  *
  * RU: Конкретные строители реализуют шаги, объявленные в общем интерфейсе.
+ * // 具体生成器类将遵循生成器接口并提供生成步骤的具体实现。你的程序中可能会
+ * // 有多个以不同方式实现的生成器变体。
  */
 public class CarBuilder implements Builder {
     private Type type;
+    // 设置汽车座位的数量。
     private int seats;
-    private Engine engine;
+    //车辆的传动装置
     private Transmission transmission;
+    // 安装指定的引擎。
+    private Engine engine;
+    // 安装行车电脑。
     private TripComputer tripComputer;
+    // 安装全球定位系统。
     private GPSNavigator gpsNavigator;
 
     @Override

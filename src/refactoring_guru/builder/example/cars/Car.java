@@ -1,15 +1,13 @@
 package refactoring_guru.builder.example.cars;
 
-import refactoring_guru.builder.example.components.Engine;
-import refactoring_guru.builder.example.components.GPSNavigator;
-import refactoring_guru.builder.example.components.Transmission;
-import refactoring_guru.builder.example.components.TripComputer;
 import refactoring_guru.builder.example.components.*;
 
 /**
  * EN: Car is a product class.
  *
  * RU: Автомобиль — это класс продукта.
+ * 只有当产品较为复杂且需要详细配置时，使用生成器模式才有意义。下面的两个
+ * 产品尽管没有同样的接口，但却相互关联。
  */
 public class Car {
     private final Type type;

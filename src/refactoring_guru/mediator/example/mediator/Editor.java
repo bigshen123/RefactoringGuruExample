@@ -1,3 +1,4 @@
+/*
 package refactoring_guru.mediator.example.mediator;
 
 import refactoring_guru.mediator.example.components.*;
@@ -7,6 +8,7 @@ import javax.swing.*;
 import javax.swing.border.LineBorder;
 import java.awt.*;
 
+*/
 /**
  * EN: Concrete mediator. All chaotic communications between concrete components
  * have been extracted to the mediator. Now components only talk with the
@@ -15,7 +17,8 @@ import java.awt.*;
  * RU: Конкретный посредник. Все связи между конкретными компонентами переехали
  * в код посредника. Он получает извещения от своих компонентов и знает как на
  * них реагировать.
- */
+ *//*
+
 public class Editor implements Mediator {
     private Title title;
     private TextBox textBox;
@@ -29,11 +32,13 @@ public class Editor implements Mediator {
     private JLabel textLabel = new JLabel("Text:");
     private JLabel label = new JLabel("Add or select existing note to proceed...");
   
-    /**
+    */
+/**
      * EN: Here the registration of components by the mediator.
      *
      * RU: Здесь происходит регистрация компонентов посредником.
-     */
+     *//*
+
     @Override
     public void registerComponent(Component component) {
         component.setMediator(this);
@@ -70,11 +75,13 @@ public class Editor implements Mediator {
         }
     }
 
-    /**
+    */
+/**
      * EN: Various methods to handle requests from particular components.
      *
      * RU: Разнообразные методы общения с компонентами.
-     */
+     *//*
+
     @Override
     public void addNewNote(Note note) {
         title.setText("");
@@ -199,3 +206,4 @@ public class Editor implements Mediator {
         notes.setVisible(true);
     }
 }
+*/

@@ -1,9 +1,5 @@
 package refactoring_guru.builder.example.cars;
 
-import refactoring_guru.builder.example.components.Engine;
-import refactoring_guru.builder.example.components.GPSNavigator;
-import refactoring_guru.builder.example.components.Transmission;
-import refactoring_guru.builder.example.components.TripComputer;
 import refactoring_guru.builder.example.components.*;
 
 /**
@@ -12,6 +8,8 @@ import refactoring_guru.builder.example.components.*;
  *
  * RU: Руководство автомобиля — это второй продукт. Заметьте, что руководство и
  * сам автомобиль не имеют общего родительского класса. По сути, они независимы.
+ *
+ * 用户使用手册应该根据汽车配置进行编制，并介绍汽车的所有功能。
  */
 public class Manual {
     private final Type type;

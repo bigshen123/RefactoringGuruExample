@@ -1,3 +1,4 @@
+/*
 package refactoring_guru.mediator.example;
 
 import refactoring_guru.mediator.example.components.*;
@@ -8,11 +9,13 @@ import refactoring_guru.mediator.example.mediator.*;
 
 import javax.swing.*;
 
+*/
 /**
  * EN: Demo class. Everything comes together here.
  *
  * RU: Демо-класс. Здесь всё сводится воедино.
- */
+ *//*
+
 public class Demo {
     public static void main(String[] args) {
         Mediator mediator = new Editor();
@@ -28,3 +31,4 @@ public class Demo {
         mediator.createGUI();
     }
 }
+*/

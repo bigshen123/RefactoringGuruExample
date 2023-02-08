@@ -1,10 +1,6 @@
 package refactoring_guru.builder.example.builders;
 
 import refactoring_guru.builder.example.cars.Type;
-import refactoring_guru.builder.example.components.Engine;
-import refactoring_guru.builder.example.components.GPSNavigator;
-import refactoring_guru.builder.example.components.Transmission;
-import refactoring_guru.builder.example.components.TripComputer;
 import refactoring_guru.builder.example.components.*;
 
 /**
@@ -12,6 +8,7 @@ import refactoring_guru.builder.example.components.*;
  *
  * RU: Интерфейс Строителя объявляет все возможные этапы и шаги конфигурации
  * продукта.
+ * // 生成器接口声明了创建产品对象不同部件的方法。
  */
 public interface Builder {
     public void setType(Type type);

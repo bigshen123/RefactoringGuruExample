@@ -2,10 +2,6 @@ package refactoring_guru.builder.example.builders;
 
 import refactoring_guru.builder.example.cars.Manual;
 import refactoring_guru.builder.example.cars.Type;
-import refactoring_guru.builder.example.components.Engine;
-import refactoring_guru.builder.example.components.GPSNavigator;
-import refactoring_guru.builder.example.components.Transmission;
-import refactoring_guru.builder.example.components.TripComputer;
 import refactoring_guru.builder.example.components.*;
 
 /**
